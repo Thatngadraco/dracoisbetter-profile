@@ -584,7 +584,7 @@
         <div id="hacker-overlay" class="hidden"></div>
         <div id="snow-overlay" class="hidden"></div>
 
-        <!-- PROFILE BLOCK: social links removed, name static, badges filtered + NEW Cool.gif badge -->
+        <!-- PROFILE BLOCK: social links removed, name static, badges filtered -->
         <div id="profile-block">
             <div class="profile-header">
                 <div class="profile-container">
@@ -607,11 +607,6 @@
                                     <div class="badge-container">
                                         <img src="assets/verified.gif" alt="Verified" class="badge">
                                         <span class="tooltip">Verified</span>
-                                    </div>
-                                    <!-- 🔥 NEW BADGE: Cool.gif with "badass" tooltip on hover -->
-                                    <div class="badge-container">
-                                        <img src="assets/Cool.gif" alt="Cool Badge" class="badge">
-                                        <span class="tooltip">badass</span>
                                     </div>
                                 </div>
                             </div>
@@ -642,7 +637,6 @@
 
         <div id="results-button-container" class="hidden"><button id="results-theme">View Results</button><div id="results-hint" class="hidden">Click again to return to profile</div></div>
 
-        <!-- Fixed missing bracket in controls div -->
         <div class="controls" style="opacity:0; pointer-events:none;"> 
             <div id="home-theme" class="theme-button">1</div> 
             <div id="hacker-theme" class="theme-button">2</div> 
@@ -697,7 +691,6 @@
             }
 
             // Remove unwanted badges (developer, bug bounty, owner, partner, hated_fakecrime, rule_maker)
-            // The new Cool.gif badge is NOT in this list, so it stays intact.
             const bannedBadges = ['developer.png', 'bug_bounty.gif', 'owner.gif', 'partner.gif', 'hated_fakecrime.gif', 'hated_fakecrime1.gif', 'rule_maker.gif'];
             function cleanBadges() {
                 const group = document.querySelector('.badge-group');
